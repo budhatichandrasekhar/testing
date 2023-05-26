@@ -8,3 +8,9 @@ sns.set_style("white")
 Data Analysis of Best-selling Phones of All Time.
 # /kaggle/input/best-selling-mobile-phones/best-selling-mobile-phones.csv we are going to use this dataset for our analysis
 best_selling = pd.read_csv("/kaggle/input/best-selling-mobile-phones/best-selling-mobile-phones.csv")
+#shape of the dataset
+print("Shape of the dataset is",best_selling.shape)
+#information about the dataset
+best_selling.info()
+#check for null values
+best_selling.isna().value_counts()
